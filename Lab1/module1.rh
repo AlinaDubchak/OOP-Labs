@@ -1,0 +1,7 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by module1.rc
+//
+#define IDD_DIALOG1                     103
+#define IDC_SCROLLBAR1                  1001
+#define IDC_STATIC5                     1000
