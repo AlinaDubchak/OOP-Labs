@@ -5,15 +5,13 @@
 
 
 #define IDC_MY_TOOLBAR					1
-#define ID_TOOL_DOT					    1
-#define ID_TOOL_LINE					2
+#define ID_TOOL_OPEN_FILE				    1
+#define ID_TOOL_SAVE_FILE					2
 #define IDC_MYICON                      2
-#define ID_TOOL_RECT					3
-#define ID_TOOL_ELLIPSE					4
-#define ID_TOOL_RGB					5
-#define ID_TOOL_CONTRAST					6
-#define ID_TOOL_SHADOW	            7
-#define ID_TOOL_LIGHT                   8	
+#define ID_TOOL_MOVE				     	3
+#define ID_TOOL_BRIGHTNESS				4
+#define ID_TOOL_CONTRAST	                5
+#define ID_TOOL_RGB                 6	
 #define IDC_MYICON                      2
 #define IDS_APP_TITLE			103
 

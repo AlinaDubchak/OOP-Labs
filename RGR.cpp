@@ -142,29 +142,23 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             // Parse the menu selections:
             switch (wmId)
             {
-            case ID_TOOL_DOT:
-                toolbar.PressBtn(hWnd, ID_TOOL_DOT);
+            case ID_TOOL_OPEN_FILE:
+                toolbar.PressBtn(hWnd, ID_TOOL_OPEN_FILE);
                 break;
-            case ID_TOOL_LINE:
-                toolbar.PressBtn(hWnd, ID_TOOL_LINE);
+            case ID_TOOL_SAVE_FILE:
+                toolbar.PressBtn(hWnd, ID_TOOL_SAVE_FILE);
                 break;
-            case ID_TOOL_RECT:
-                toolbar.PressBtn(hWnd, ID_TOOL_RECT);
+            case ID_TOOL_MOVE:
+                toolbar.PressBtn(hWnd, ID_TOOL_MOVE);
                 break;
-            case ID_TOOL_ELLIPSE:
-                toolbar.PressBtn(hWnd, ID_TOOL_ELLIPSE);
-                break;
-            case ID_TOOL_RGB:
-                toolbar.PressBtn(hWnd, ID_TOOL_RGB);
+            case ID_TOOL_BRIGHTNESS:
+                toolbar.PressBtn(hWnd, ID_TOOL_BRIGHTNESS);
                 break;
             case ID_TOOL_CONTRAST:
                 toolbar.PressBtn(hWnd, ID_TOOL_CONTRAST);
                 break;
-            case ID_TOOL_SHADOW:
-                toolbar.PressBtn(hWnd, ID_TOOL_SHADOW);
-                break;
-            case ID_TOOL_LIGHT:
-                toolbar.PressBtn(hWnd, ID_TOOL_LIGHT);
+            case ID_TOOL_RGB:
+                toolbar.PressBtn(hWnd, ID_TOOL_RGB);
                 break;
             case IDM_ABOUT:
                 DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);
