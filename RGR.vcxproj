@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="files.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="resource1.h" />
@@ -135,6 +136,7 @@
     <ClInclude Include="ToolBar.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="files.cpp" />
     <ClCompile Include="RGR.cpp" />
     <ClCompile Include="ToolBar.cpp" />
   </ItemGroup>

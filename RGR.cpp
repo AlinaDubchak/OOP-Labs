@@ -1,18 +1,19 @@
 // RGR.cpp : Defines the entry point for the application.
 //
 
-#include "framework.h"
 #include "RGR.h"
-#include "ToolBar.h"
-#include <commctrl.h>
 
-ToolBar toolbar;
+
 #define MAX_LOADSTRING 100
 
 // Global Variables:
 HINSTANCE hInst;                                // current instance
 WCHAR szTitle[MAX_LOADSTRING];                  // The title bar text
 WCHAR szWindowClass[MAX_LOADSTRING];            // the main window class name
+
+
+ToolBar toolbar;
+
 
 // Forward declarations of functions included in this code module:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
@@ -139,25 +140,30 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_COMMAND:
         {
             int wmId = LOWORD(wParam);
-            // Parse the menu selections:
             switch (wmId)
             {
-            case ID_TOOL_OPEN_FILE:
+            case ID_FILE_OPENFILE:
+                toolbar.OnToolOpenFile();
                 toolbar.PressBtn(hWnd, ID_TOOL_OPEN_FILE);
                 break;
-            case ID_TOOL_SAVE_FILE:
+            case ID_FILE_SAVEFILE:
+                toolbar.OnToolSaveFile();
                 toolbar.PressBtn(hWnd, ID_TOOL_SAVE_FILE);
                 break;
-            case ID_TOOL_MOVE:
+            case ID_TOOLS_HAND:
+                toolbar.OnToolHand();
                 toolbar.PressBtn(hWnd, ID_TOOL_MOVE);
                 break;
-            case ID_TOOL_BRIGHTNESS:
+            case ID_IMAGE_BRIGHTNESS:
+                toolbar.OnToolBrightness();
                 toolbar.PressBtn(hWnd, ID_TOOL_BRIGHTNESS);
                 break;
-            case ID_TOOL_CONTRAST:
+            case ID_IMAGE_CONTRAST:
+                toolbar.OnToolContrast();
                 toolbar.PressBtn(hWnd, ID_TOOL_CONTRAST);
                 break;
-            case ID_TOOL_RGB:
+            case ID_IMAGE_RGB:
+                toolbar.OnToolRGB();
                 toolbar.PressBtn(hWnd, ID_TOOL_RGB);
                 break;
             case IDM_ABOUT:

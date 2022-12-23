@@ -104,3 +104,39 @@ void ToolBar::OnNotify(HWND hWnd, WPARAM wParam, LPARAM lParam)
         }
     }
 }
+
+void ToolBar::OnToolOpenFile()
+{
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_OPEN_FILE, 1);
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_OPEN_FILE, 0);
+}
+
+void ToolBar::OnToolSaveFile()
+{
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_SAVE_FILE, 1);
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_SAVE_FILE, 0);
+}
+
+void ToolBar::OnToolHand()
+{
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_MOVE, 1);
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_MOVE, 0);
+}
+
+void ToolBar::OnToolBrightness()
+{
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_BRIGHTNESS, 1);
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_BRIGHTNESS, 0);
+}
+
+void ToolBar::OnToolContrast()
+{
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_CONTRAST, 1);
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_CONTRAST, 0);
+}
+
+void ToolBar::OnToolRGB()
+{
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_RGB, 1);
+    SendMessage(hwndToolBar, TB_PRESSBUTTON, ID_TOOL_RGB, 0);
+}
