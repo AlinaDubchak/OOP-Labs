@@ -1,6 +1,6 @@
-﻿//{{NO_DEPENDENCIES}}
+//{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
-// Used by rgr.rc
+// Used by RGR.rc
 //
 #define IDC_MYICON                      2
 #define IDD_RGR_DIALOG                  102
