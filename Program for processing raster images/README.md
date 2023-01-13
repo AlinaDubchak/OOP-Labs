@@ -3,7 +3,8 @@
 ## Постановка задачі
 
 Розробити програму для обробки растрових зображень в ООП стилі<br>
-Windows desctop application
+Windows desctop application<br>
+Language - C++
 
 ## Функціональні вимоги
 
